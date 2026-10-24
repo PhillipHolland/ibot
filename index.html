@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1ec">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="iBot">
+  <title>iBot</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/ChicagoKare.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://js-cdn.music.apple.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage">
+    <div class="fit" id="fit">
+      <div class="ipod" id="device">
+        <div class="ipod-shadow">
+          <div class="ipod-shadow-inner">
+            <div class="ipod-container">
+              <div class="ipod-screen" id="screen">
+                <div class="menu-layer">
+                  <div class="menu">
+                    <div class="menu-title" id="menu-title">
+                      <div class="brand" id="brand">iBot</div>
+                      <svg class="play-icon" id="np-play" viewBox="0 0 10 12" aria-hidden="true" hidden>
+                        <path d="M9.58 5.635 0 11.212V.057z"/>
+                      </svg>
+                      <div class="battery-indicator" aria-hidden="true"></div>
+                      <div class="screen-title" id="lcd-title"></div>
+                    </div>
+                    <div class="screen-body" id="screen-body">
+                      <div class="screen" id="lcd" role="listbox" aria-labelledby="menu-title"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="click-wheel" id="wheel" style="--select-button-pct:28.5714285714%;--scroll-wheel-pct:78.8571428571%;--wheel-noise-texture:url(assets/wheel-noise.png)">
+                <button type="button" class="wheel-button menu-button" data-zone="menu" aria-label="Menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150" aria-hidden="true">
+                    <path id="menu-text-curve" fill="none" d="M31.234 97.495S92.808 41.234 200 41.234c121.84 0 168.766 56.26 168.766 56.26"/>
+                    <text><textPath href="#menu-text-curve" startOffset="112">menu</textPath></text>
+                  </svg>
+                </button>
+                <button type="button" class="wheel-button back-button" data-zone="prev" aria-label="Previous">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" aria-hidden="true"><path d="M9.58 5.635 0 11.212V.057zm9.623 0-9.58 5.577V.057zm0-5.635H23v11.273h-3.797z"/></svg>
+                </button>
+                <button type="button" class="wheel-button forward-button" data-zone="next" aria-label="Next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 23 12" aria-hidden="true"><path d="M9.58 5.635 0 11.212V.057zm9.623 0-9.58 5.577V.057zm0-5.635H23v11.273h-3.797z"/></svg>
+                </button>
+                <button type="button" class="wheel-button playpause-button" data-zone="play" aria-label="Play or pause">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" aria-hidden="true"><path d="M9.58 5.635 0 11.212V.057zM19.578 0h3.796v11.273h-3.796zm-5.793 0h3.797v11.273h-3.797z"/></svg>
+                </button>
+                <div class="wheel-dividers"></div>
+                <div class="scroll-wheel" aria-hidden="true"></div>
+                <button type="button" class="select-button" id="center" aria-label="Select. Hold or swipe to change the character."></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+iBot is an independent fan project. It is not affiliated with, endorsed by,
+or sponsored by Apple Inc.
+
+APPLE ASSETS ARE NOT COVERED BY THIS REPOSITORY'S LICENSE
+---------------------------------------------------------
+The MIT License in LICENSE covers only the original code in this repository
+written by Phillip Holland. It does NOT cover the following, which belong to
+Apple Inc. and are included as-is from Apple's iPod page
+(https://music.apple.com/us/ipod):
+
+  - assets/ChicagoKare.woff2   (Apple's ChicagoKare typeface)
+  - assets/click.wav           (Apple's click-wheel click sound)
+  - assets/wheel-noise.png     (Apple's click-wheel noise texture)
+  - assets/back.svg, assets/forward.svg, assets/menu-label.svg,
+    assets/playpause.svg       (Apple's click-wheel glyphs)
+  - The iPod device and click-wheel CSS in styles.css that is marked as
+    Apple's or was taken from Apple's iPod page, and the click/marquee
+    behaviour ported from Apple's web-music-ipod bundle
+
+All rights in those assets remain with Apple Inc. No license to them is
+granted by this repository. If you fork or redistribute iBot, you are
+responsible for your own use of them; replace them with your own assets if
+you need to be sure.
+
+"iPod", "Apple Music", and "MusicKit" are trademarks of Apple Inc., registered
+in the U.S. and other countries.
+
+Music playback uses Apple's MusicKit JS as a client of each listener's own
+Apple Music account and requires an Apple Music subscription. This repository
+never contains an Apple private key, Team ID, or Key ID; each deployment
+supplies its own through environment variables.

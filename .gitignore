@@ -1,0 +1,13 @@
+# Secrets and local config: never commit
+.env
+.env*
+*.p8
+*.pem
+*.key
+.vercel
+ids.env
+
+# Dependencies and OS junk
+node_modules
+._*
+.DS_Store
