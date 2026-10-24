@@ -4,7 +4,7 @@ A 1:1 web recreation of Apple's iPod page that plays **your own Apple Music**. L
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPhillipHolland%2Fibot&project-name=ibot&repository-name=ibot&env=APPLE_TEAM_ID,APPLE_KEY_ID,APPLE_PRIVATE_KEY,ALLOWED_ORIGINS&envDescription=Apple%20Team%20ID%2C%20MusicKit%20Key%20ID%2C%20the%20.p8%20contents%2C%20and%20your%20bare%20host%20(no%20https%3A%2F%2F)&envLink=https%3A%2F%2Fgithub.com%2FPhillipHolland%2Fibot%23roll-your-own)
 
-> Want a bot to set it up for you? Grab the iBot Grok Bot template: TEMPLATE_URL
+> Want a bot to set it up for you? Grab the iBot Grok Bot template: https://x.ai/bot/jK9aaa6Pypf_WjnaIHWah
 
 ## Features
 
